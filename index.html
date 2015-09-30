@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="Main">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Games! games everywhere</title>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container" ng-controller="productsController">
+		<div id="header">
+		  <h1>Welcome to Shop a Game</h1>
+		   <div class="bar">
+		 Search game: <input ng-model="query">
+		   </div> <br>
+		 <div>
+		 	Search category <label ng-repeat="platform in platforms" class="checkbox-inline">
+			<input type="checkbox" ng-click="platformChange(platform.platform)"> {{platform.platform}}
+		 </label>
+		 </div> <br>
+		</div>
+		<div class="container">
+		<div class="col-md-4" ng-repeat="product in products | filter:productFilter | filter:query">
+			<a ng-href="#/product/{{product.id}}">
+				<div class="well">
+					<h4>{{product.name}}</h4>
+
+					<label>
+						Price:
+					</label>
+					{{ product.price }} DKK. <br>
+					<label>
+						Genre:
+					</label>
+					{{product.genre}}
+
+				</div>
+			</a>
+		</div>
+		</div>
+	</div>
+
+	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="node_modules/angular/angular-route.min.js"></script>
+	<script src="js/app.module.js"></script>
+	<script src="js/product.controller.js"></script>
+	<script src="js/products.service.js"></script>
+	<script src="js/products.controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+[
+  {
+	"id": "dark-souls",
+	"name": "Dark souls",
+	"price": 250,
+	"platform": "PS",
+    "genre": "RPG"
+
+  },
+  {
+	"id": "blood-borne",
+	"name": "Blood Borne",
+	"price": 499,
+	"platform": "PS",
+    "genre": "RPG"
+
+
+  },	{
+  "id": "red-redemption",
+  "name": "Red dead redemption",
+  "price": 100,
+  "platform": "ps",
+  "genre": "RPG"
+
+},
+  {
+  "id": "halo",
+  "name": "Halo",
+  "price": 250,
+  "platform": "Xbox",
+    "genre": "FPS"
+
+},
+  {
+    "id": "last-of-us",
+    "name": "The last of us",
+    "price": 500,
+    "platform": "PS",
+    "genre": "Adventure"
+
+  },
+  {
+    "id": "god-war",
+    "name": "God of war",
+    "price": 499,
+    "platform": "PS",
+    "genre": "Adventure"
+
+  },	{
+  "id": "mass-effect",
+  "name": "Mass effect",
+  "price": 100,
+  "platform": "PC",
+  "genre": "RPG"
+
+},
+  {
+  "id": "zelda",
+  "name": "Zelda: Ocarina of time",
+  "price": 50,
+  "platform": "Xbox",
+  "genre": "RPG"
+
+},
+  {
+    "id": "postal",
+    "name": "Postal",
+    "price": 50,
+    "platform": "PC",
+    "genre": "RPG"
+
+  }
+]
